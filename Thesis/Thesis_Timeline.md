@@ -12,7 +12,7 @@
 | **Summer 2019** | Oral Presentation for Thesis Proposal |
 | **Fall 2019** | Medical Leave of absence |
 | **Spring 2020** | |
-| February 3rd, 2020 | Abstract approved by thesis advisor |
+| **February 3rd, 2020** | Abstract approved by thesis advisor |
 | **March 13, 2020** | Mid-term progress report |
 | **April 2, 2020** | First draft of thesis  |
 | **April 29, 2020** | Thesis presentation |
