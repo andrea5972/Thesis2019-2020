@@ -1,22 +1,19 @@
+<p align="center">
 THESIS PROPOSAL
 
-BY
-
-ANDREA L. MURPHY
-
+<p align="center">
+By<br>
+Andrea L. Murphy
+<p align="center">
 Bachelor of Science, Marketing, Virginia Commonwealth University 2014
 
-THESIS
-
+<p align="center">
 Submitted to the University of New Hampshire in Partial Fulfillment of the Requirements for the Degree of
-
 Master of Science
-
 in
-
 Information Technology
-
-May, 2019
+<p align="center">
+September, 2019
 
 ## TABLE OF CONTENTS
 
