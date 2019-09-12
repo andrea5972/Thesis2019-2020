@@ -18,7 +18,7 @@ Information Technology
 
 May, 2019
 
-**TABLE OF CONTENTS**
+## TABLE OF CONTENTS
 
 | **CHAPTERS** |
 | ---
@@ -33,14 +33,14 @@ May, 2019
 | REQUIRED RESOURCES |
 | REFERENCES |
 
-**ABSTRACT**
 
+## ABSTRACT
+<p align="center">
 AMERICAN SIGN LANGUAGE RECOGNITION APPLICATION USING COMPUTER VISION, MACHINE AND DEEP LEARNING ALGORITHMS
-
-By
-
-Andrea L. Murphy
-
+</p>
+<p align="center">
+By<br>
+Andrea L. Murphy<br>
 University of New Hampshire
 
 A program that can perform image recognition has to be able to process a given image and describe its contents. An example of this could be as simple as recognizing if the given image is a cat or not a cat to something more complicated such as taking an image of an American Sign Language (ASL) hand gesture and classify it with its corresponding alphabet, which is a part of my current problem. The problem being how to create an application that takes ASL alphabet signs and can detect the had itself and the recognize what letter it is, in real time.
@@ -51,7 +51,7 @@ To implement this, I will use MATLAB\_R2019a and their new Computer Vision Syste
 
 American Sign Language (ASL) substantially facilitates communication in the deaf community. So, aiding in the ability of communication with the help of a simple portable application makes this study extremely significant. Currently, there are no applications on the market that recognize ASL in real-time, increasing the need for this research and development.
 
-**INTRODUCTION**
+## INTRODUCTION
 
 American Sign Language (ASL) fundamentally facilitates communication in the deaf community. Over 5% of the world&#39;s population – or 466 million people – has disabling hearing loss. It is estimated that by 2050 over 900 million people – or one in every ten people – will have disabling hearing loss. [1]
 
@@ -59,25 +59,25 @@ We currently have many translation applications on the market for different spok
 
 This proposal is organized into different sections, which includes the scope of the thesis, background required for the thesis, literature review, methods that will be used to complete the study including assumptions made and limitations, expected results, work plan/timeline, required resources and references.
 
-**SCOPE**
+## SCOPE
 
 Through this thesis I want to create an application that is able to recognize the ASL hand signs for the alphabet A-Z with high accuracy. For this I will work on creating the required dataset, building a CNN neural network, training this network and creating models while working on techniques that can improve accuracy without losing speed. This will involve me building multiple datasets, neural networks and models while training over and over till I achieve the desired result which would be a CNN and a model which would perform quick and accurate predictions.
 
 For this, I will firstconstruct the application in MATLAB until I achieve the desired result. Then I will convert the project into python application with pyTorch. This will involve fine tuning and creating a UI, completing the application.
 
-**BACKGROUND**
+## BACKGROUND
 
 Computer vision is an interdisciplinary scientific field that deals with how computers can be made to gain high-level understanding from digital images or videos; it seeks to automate tasks that the human visual system can do. Machine Learning is a method of analyzing data by giving computers the capability to learn without being programed. Deep learning is a subset of Machine Learning that that imitates the workings of the human brain in processing data and creating patterns that can be used in decision making.
 
 Bag-Of-Features in MATLAB, otherwise known as Bag of Visual Words (BOVW) is adapted from information retrieval and Natural Language Processing (NLP) bag of words (BOW). In BOW, the occurrences of each word are counted and used to create a frequency histogram of the keywords. Similarly, in Bag-Of-Features or Bag of Visual Words, the image features (unique patterns that can be found in an image) are used as &quot;words&quot; to create the frequency histogram using the key features.
 
-**LITERATURE REVIEW**
+## LITERATURE REVIEW
 
 Currently there are no ASL recognition applications on the market. This includes all platforms; mobile, web, and desktop applications.
 
  However, ASL recognition is not necessarily an unexplored research topic. There are a few research papers and GitHub projects based on the ASL recognition. Nothing to date using MATLAB and none of these have the speed or accuracy that I hope to achieve through this Thesis.
 
-**METHODS**
+## METHODS
 
 In computer science, garbage in, garbage out describes the concept that flawed, or nonsense input data produces nonsense output or &quot;garbage&quot;. [2] The quality of the data set used plays a significant part on the accuracy of your model. Hence, I spent time on finding the perfect image dataset to use. I considered the size of the datasets and the quality of the images themselves to make this selection.
 
@@ -89,14 +89,17 @@ I constructed a multiclass Support Vector Machines (SVM), I create an image cate
 
 The image data which is ASL hand gesture images labeled by their corresponding alphabet is taken and divided into training and test databases. The training database is used to create the Bag-Of-Features object, which is later used with SVM to train the classifier. This classifier is finally used to classify the ASL hand gesture images to their corresponding alphabets.
 
-**EXPECTED RESULTS**
+## EXPECTED RESULTS
+
  So far, I have used multi-class SVM with Bag-Of-Features to build my classifier using MATLAB. I created 4 different datasets from the original dataset in order to try and run the code locally. These are the results:
 
 **Dataset I:**
+
 - 10 classes A-J
 - Each class containing 10 images; 100 images total
--
+
 **Bag-Of-Features:**
+
 \* Extracting features from 2 images in image set 1-10...done. Extracted 5000 features.
 
 \* Keeping 80 percent of the strongest features from each category.
@@ -114,13 +117,16 @@ The image data which is ASL hand gesture images labeled by their corresponding a
 \* Finished creating Bag-Of-Features
 
 **Results:**
+
 100% accuracy scores for both models and detected all input images as the letter &quot;H&quot;.
 
 **Dataset II:**
+
 - 8 classes A-H
 - Each class containing 1000 images
 
 **Bag-Of-Features:**
+
 \* Extracting features from 600 images in image set 1-8...done. Extracted 1500000 features.
 
 \* Keeping 80 percent of the strongest features from each category.
@@ -138,13 +144,16 @@ The image data which is ASL hand gesture images labeled by their corresponding a
 \* Finished creating Bag-Of-Features
 
 **Results:**
+
 This dataset had 97% accuracy scores for both models but detected all images as the letter &quot;H&quot;.
 
 **Dataset III:**
+
 - 3 classes A-C
 - Each class containing 1000 images
 
 **Bag-Of-Features:**
+
 \* Extracting features from 600 images in image set 1-3...done. Extracted 1500000 features.
 
 \* Keeping 80 percent of the strongest features from each category.
@@ -162,13 +171,16 @@ This dataset had 97% accuracy scores for both models but detected all images as 
 \* Finished creating Bag-Of-Features
 
 **Results:**
+
 This dataset had 97% accuracy scores for both training and testing models. By constructing the image set Class I was able to detect the image with the correct letter.
 
 **Dataset IV:**
+
 - 10 classes A-Z
 - Each class containing 3000 images; 78,000 images total
 
 **Bag-Of-Features:**
+
 \* Extracting features from 900 images in image set 26...done. Extracted 2250000 features.
 
 \* Keeping 80 percent of the strongest features from each category.
@@ -178,11 +190,14 @@ Requested 46800000x64 (11.2GB) array exceeds maximum array size preference. Crea
 and cause MATLAB to become unresponsive. See array size limit or preference panel for more information.
 
 **Results:**
+
 Are inconclusive due to hardware limitations. Further explained in the Required Resources section.
 
 As of now, I am hoping to use other Deep Learning algorithms such as CNN to achieve a high accuracy prediction by using models trained with the whole data set and all 26 classes. Also, converting the project into a python application to fine-tune the results.
 
-**WORK PLAN/TIMELINE**
+
+## WORK PLAN/TIMELINE
+
 **Thesis Timeline for Program Completion by May 2020**
 
 | **Term** | **Millstones** |
@@ -197,12 +212,14 @@ As of now, I am hoping to use other Deep Learning algorithms such as CNN to achi
 | **Spring 2020** February 3rd, 2020 | Abstract approved by thesis advisor |
 | **March 13, 2020** | Mid-term progress report |
 
-**REQUIRED RESOURCES**
+## REQUIRED RESOURCES
+
  In order to complete my Thesis as a MATLAB application I will need to find a way to fix the &quot;Error using zeros&quot; I am currently getting. Due to the size of the datasets needed exceeding the size of the allowed by my local hardware of my personal computer.
 
  This is why moving forward I would require hardware with higher computational capabilities. As well as moving the project completely from MATLAB to python to achieve the desired speed and accuracy of recognition.
 
-**REFERENCES**
+## REFERENCES
+
 [1] Deafness and hearing loss. Retrieved September 9, 2019 from https://www.who.int/news-
 room/fact-sheets/detail/deafness-and-hearing-loss
 
