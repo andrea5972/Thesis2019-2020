@@ -60,7 +60,7 @@ This proposal is organized into different sections, which includes the scope of 
 
 Through this thesis I want to create an application that is able to recognize the ASL hand signs for the alphabet A-Z with high accuracy. For this I will work on creating the required dataset, building a CNN neural network, training this network and creating models while working on techniques that can improve accuracy without losing speed. This will involve me building multiple datasets, neural networks and models while training over and over till I achieve the desired result which would be a CNN and a model which would perform quick and accurate predictions.
 
-For this, I will firstconstruct the application in MATLAB until I achieve the desired result. Then I will convert the project into python application with pyTorch. This will involve fine tuning and creating a UI, completing the application.
+For this, I will first construct the application in MATLAB until I achieve the desired result. Then I will convert the project into python application with pyTorch. This will involve fine tuning and creating a UI, completing the application.
 
 ## BACKGROUND
 
@@ -70,19 +70,17 @@ Bag-Of-Features in MATLAB, otherwise known as Bag of Visual Words (BOVW) is adap
 
 ## LITERATURE REVIEW
 
-Currently there are no ASL recognition applications on the market. This includes all platforms; mobile, web, and desktop applications.
-
- However, ASL recognition is not necessarily an unexplored research topic. There are a few research papers and GitHub projects based on the ASL recognition. Nothing to date using MATLAB and none of these have the speed or accuracy that I hope to achieve through this Thesis.
+Currently there are no ASL recognition applications on the market. This includes all platforms; mobile, web, and desktop applications. However, ASL recognition is not necessarily an unexplored research topic. There are a few research papers and GitHub projects based on the ASL recognition. Nothing to date using MATLAB and none of these have the speed or accuracy that I hope to achieve through this Thesis.
 
 ## METHODS
 
-In computer science, garbage in, garbage out describes the concept that flawed, or nonsense input data produces nonsense output or &quot;garbage&quot;. [2] The quality of the data set used plays a significant part on the accuracy of your model. Hence, I spent time on finding the perfect image dataset to use. I considered the size of the datasets and the quality of the images themselves to make this selection.
+In computer science, garbage in, garbage out describes the concept that flawed, or nonsense input data produces nonsense output or &quot;garbage&quot;. [2] The quality of the dataset used plays a significant part on the accuracy of your model. Hence, I spent time on finding the perfect image dataset to use. I considered the size of the datasets and the quality of the images themselves to make this selection.
 
-The data set I ended up using was found on Kaggle.com. The training dataset contains 87,000 images which are 200x200 pixels. There are 29 classes, of which 26 are for the letters A-Z and 3 classes for SPACE, DELETE and NOTHING. These 3 classes are very helpful in real time applications, and classification. The test dataset contains a mere 29 images, to encourage the use of real-world test images. [3]
+The dataset I ended up using was found on Kaggle.com. The training dataset contains 87,000 images which are 200x200 pixels. There are 29 classes, of which 26 are for the letters A-Z and 3 classes for SPACE, DELETE and NOTHING. These 3 classes are very helpful in real time applications, and classification. The test dataset contains a mere 29 images, to encourage the use of real-world test images. [3]
 
 The dataset was then uploaded into a MATLAB\_R2019 project and used to create an ALS alphabet database or gallery of images. Then by using the Image Set method constructed arrays of the images in the database to be used for feature extraction using the Bag-Of-Features method. The Bag-Of-Features method extracts SURF features (Speeded Up Robust Features) from the image files, constructs a visual library by reducing the number of features through division of feature space using K-means clustering. These features are then used to train a classifier model to recognize ASL signs of the 2D input images of hands.
 
-I constructed a multiclass Support Vector Machines (SVM), I create an image category classifier. The classifier contains the number of categories and the category labels for the input images. Then I trained a support vector machine (SVM) multiclass classifier using the input bag, a Bag-Of-Features object.
+I constructed a multi-class Support Vector Machines (SVM), I create an image category classifier. The classifier contains the number of categories and the category labels for the input images. Then I trained a support vector machine (SVM) multiclass classifier using the input bag, a Bag-Of-Features object.
 
 The image data which is ASL hand gesture images labeled by their corresponding alphabet is taken and divided into training and test databases. The training database is used to create the Bag-Of-Features object, which is later used with SVM to train the classifier. This classifier is finally used to classify the ASL hand gesture images to their corresponding alphabets.
 
@@ -190,7 +188,7 @@ and cause MATLAB to become unresponsive. See array size limit or preference pane
 
 Are inconclusive due to hardware limitations. Further explained in the Required Resources section.
 
-As of now, I am hoping to use other Deep Learning algorithms such as CNN to achieve a high accuracy prediction by using models trained with the whole data set and all 26 classes. Also, converting the project into a python application to fine-tune the results.
+As of now, I am hoping to use other Deep Learning algorithms such as CNN to achieve a high accuracy prediction by using models trained with the whole dataset and all 26 classes. Also, converting the project into a python application to fine-tune the results.
 
 
 ## WORK PLAN/TIMELINE
