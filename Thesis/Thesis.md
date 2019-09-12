@@ -40,7 +40,7 @@ By<br>
 Andrea L. Murphy<br>
 University of New Hampshire
 
-A program that can perform image recognition has to be able to process a given image and describe its contents. An example of this could be as simple as recognizing if the given image is a cat or not a cat to something more complicated such as taking an image of an American Sign Language (ASL) hand gesture and classify it with its corresponding alphabet, which is a part of my current problem. The problem being how to create an application that takes ASL alphabet signs and can detect the had itself and the recognize what letter it is, in real time.
+A program that can perform image recognition has to be able to process a given image and describe its contents. An example of this could be as simple as recognizing if the given image is a cat or not a cat to something more complicated such as taking an image of an American Sign Language (ASL) hand gesture and classify it with its corresponding alphabet, which is a part of my current problem. The problem being how to create an application that takes ASL alphabet signs and can detect the hand itself and the recognize what letter it is, in real time.
 
 To solve this problem, one is not able to specify which features would differentiate between ASL signs due to many reasons. For example, each person can have slight modifications in their hand gestures. So, I will use computer vision and machine learning techniques as a way to enable a program to find patterns and infer results from the given data.
 
