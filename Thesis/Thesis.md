@@ -1,4 +1,3 @@
-<p align="center">
 THESIS PROPOSAL
 
 BY
@@ -18,30 +17,21 @@ in
 Information Technology
 
 May, 2019
-
+``
 **TABLE OF CONTENTS**
 
-**CHAPTERS                                                                                        PAGE**
-
-ABSTRACT
-
-INTRODUCTION………………………………………………………………………………...3
-
-SCOPE…………………………………………………………………………………………….3
-
-BACKGROUND………………………………………………………………………………….4
-
-LITERATURE REVIEW…………………………………………………………………………4
-
-METHODS………………………………………………………………………………………..5
-
-EXPECTED RESULTS………………………...…………………………………………………6
-
-WORK PLAN AND TIMELINE…………………………………………………………………9
-
-REQUIRED RESOURCES……………………………………………………………………...10
-
-REFERENCES…………………………………………………………………………………..11
+| **CHAPTERS** |
+| ---
+| ABSTRACT |
+| INTRODUCTION |
+| SCOPE |
+| BACKGROUND |
+| LITERATURE REVIEW |
+| METHODS |
+| EXPECTED RESULTS |
+| WORK PLAN AND TIMELINE|
+| REQUIRED RESOURCES |
+| REFERENCES |
 
 **ABSTRACT**
 
