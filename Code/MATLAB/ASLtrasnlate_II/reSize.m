@@ -15,5 +15,5 @@ imageAugmenter = imageDataAugmenter( ...
 augTrain = augmentedImageDatastore(inputSize(1:2),aslTrain, ...
     'DataAugmentation',imageAugmenter);
 
-% Resize the test images
-augTest = augmentedImageDatastore(inputSize(1:2),aslTest);
+% Resize the validation images
+augValidation = augmentedImageDatastore(inputSize(1:2),aslValidation);
